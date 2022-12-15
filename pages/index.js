@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import { useState } from 'react';
 
 const Home = () => {
   return (
@@ -17,6 +18,14 @@ const Home = () => {
             <h2>insert your subtitle here</h2>
           </div>
         </div>
+        <div className="prompt-container">
+          <textarea 
+          placeholder="start typing here" 
+          className="prompt-box"
+          value={userInput}
+          onChange={onUserChangedText} 
+          />
+        </div>;
       </div>
       <div className="badge-container grow">
         <a
@@ -32,6 +41,13 @@ const Home = () => {
       </div>
     </div>
   );
+};
+
+const [userInput, setUserInput] = useState('');
+
+const onUserChangedText = (event) => {
+    console.log(event.target.value);
+    setUserInput(event.target.value);
 };
 
 export default Home;
