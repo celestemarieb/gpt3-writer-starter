@@ -53,7 +53,7 @@ const callGenerateEndpoint = async () => {
             onChange={onUserChangedText} 
           />
             <div className="prompt-buttons">
-              <a className="generate-button" onClick={null}>
+              <a className="generate-button" onClick={callGenerateEndpoint}>
                 <div className="generate">
                   <p>Generate</p>
                 </div>
