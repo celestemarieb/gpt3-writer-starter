@@ -6,8 +6,8 @@ import { useState } from "react";
 const Home = () => {
   const [userInput, setUserInput] = useState({});
   const onUserChangedText = (event) => {
-    console.log(event.target.value);
     setUserInput(event.target.value);
+  };
   return (
     <div className="root">
       <Head>
@@ -28,7 +28,14 @@ const Home = () => {
           className="prompt-box"
           value={userInput}
           onChange={onUserChangedText} 
-          />;
+          />
+            <div className="prompt-buttons">
+              <a className="generate-button" onClick={null}>
+                <div className="generate">
+                  <p>Generate</p>
+                </div>
+              </a>
+            </div>
         </div>;
       </div>
       <div className="badge-container grow">
@@ -45,7 +52,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
 };
 
 export default Home;
