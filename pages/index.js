@@ -19,15 +19,15 @@ const Home = () => {
             <h1>make small talk</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter below the opening line of the colleague in the corridor, the neighbour leaning over your fence or that relative who arrives early to Christmas lunch. Make their day. Make small talk.</h2>
+            <h2>Plug in the opening line of your colleague in the corridor, the neighbour leaning over your fence or that relative who arrives early to Christmas lunch. Make their day. Make small talk.</h2>
           </div>
         </div>
         <div className="prompt-container">
           <textarea 
-          placeholder="start typing here" 
-          className="prompt-box"
-          value={userInput}
-          onChange={onUserChangedText} 
+            placeholder="start typing here" 
+            className="prompt-box"
+            value={userInput}
+            onChange={onUserChangedText} 
           />
             <div className="prompt-buttons">
               <a className="generate-button" onClick={null}>
