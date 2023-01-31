@@ -42,7 +42,7 @@ const callGenerateEndpoint = async () => {
             <h1>make small talk</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Plug in the opening line of your colleague in the corridor, the neighbour leaning over your fence or that relative who arrives early to Christmas lunch. Make their day. Make small talk.</h2>
+            <h2>Pop in your colleagues' opening line in the corridor, the neighbour's shout over the fence, or the very first question from that relative at Thanksgiving. Make their day. Make small talk.</h2>
           </div>
         </div>
         <div className="prompt-container">
